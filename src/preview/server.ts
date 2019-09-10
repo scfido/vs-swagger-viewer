@@ -54,8 +54,8 @@ export class PreviewServer {
 					this.startServer(this.currentPort + 1);
 				}
 			})
-			.listen(this.currentPort, err => {
-				if(err) this.startServer(this.currentPort + 1);
+			.listen(this.currentPort, () => {
+				//if(err) this.startServer(this.currentPort + 1);
 			});
 		}
 		catch(err){
